@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="binding"
+            type="com.example.techshellindiaproject.FormActivity" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".FormActivity">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/darback">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/customerLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    app:boxBackgroundColor="@color/darkorange"
+                    app:hintTextColor="@color/black"
+                    app:placeholderText="Enter Customer Id">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/customer_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="@string/customer_id"
+                        android:inputType="number"
+                        android:textColor="@color/black" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/customernameLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/customerLayout"
+                    android:layout_margin="16dp"
+                    app:boxBackgroundColor="@color/darkorange"
+                    app:hintTextColor="@color/black"
+                    app:placeholderText="Enter Customer Name">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/customer_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="@string/customer_name"
+                        android:textColor="@color/black" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/jobtitleLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/customernameLayout"
+                    android:layout_margin="16dp"
+                    app:boxBackgroundColor="@color/darkorange"
+                    app:hintTextColor="@color/black"
+                    app:placeholderText="Enter Job Title">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/job_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="@string/job_title"
+                        android:textColor="@color/black" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/joblocaLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/jobtitleLayout"
+                    android:layout_margin="16dp"
+                    app:boxBackgroundColor="@color/darkorange"
+                    app:hintTextColor="@color/black"
+                    app:placeholderText="Enter Job Location">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/job_location"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="@string/noida_mumbai_etc"
+                        android:textColor="@color/black" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/budgetfromLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/joblocaLayout"
+                    android:layout_margin="16dp"
+                    app:boxBackgroundColor="@color/darkorange"
+                    app:hintTextColor="@color/black"
+                    app:placeholderText="@string/budgetfrom">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/budget_from"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="@string/enter_budget_from"
+                        android:inputType="number"
+                        android:textColor="@color/black" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/budgettoLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/budgetfromLayout"
+                    android:layout_margin="16dp"
+                    app:boxBackgroundColor="@color/darkorange"
+                    app:hintTextColor="@color/black"
+                    app:placeholderText="@string/budgetto">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/budget_to"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="@string/enter_budget_to"
+                        android:inputType="number"
+                        android:textColor="@color/black" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/jobtypeLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/budgettoLayout"
+                    android:layout_margin="16dp"
+                    app:boxBackgroundColor="@color/darkorange"
+                    app:hintTextColor="@color/black"
+                    app:placeholderText="@string/jobtype">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/job_type"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="Enter Job Type"
+                        android:textColor="@color/black" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/peopleLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/jobtypeLayout"
+                    android:layout_margin="16dp"
+                    app:boxBackgroundColor="@color/darkorange"
+                    app:hintTextColor="@color/black"
+                    app:placeholderText="@string/age">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/people"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="@string/enter_people_age"
+                        android:inputType="number"
+                        android:textColor="@color/black" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <Spinner
+                    android:id="@+id/skills"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/peopleLayout"
+                    android:layout_margin="16dp"
+                    android:background="@color/darkorange"
+                    android:padding="8dp"
+                    android:spinnerMode="dropdown" />
+
+                <LinearLayout
+                    android:id="@+id/skillsLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/skills"
+                    android:layout_margin="10dp"
+                    android:padding="8dp"
+                    android:background="@color/lightblue"
+                    android:orientation="vertical" />
+
+                    <Spinner
+                        android:id="@+id/experience"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="@string/exper"
+                        android:inputType="number"
+                        android:layout_margin="16dp"
+                        android:background="@color/darkorange"
+                        android:layout_below="@+id/skillsLayout"
+                        android:padding="8dp"
+                        android:textColor="@color/black" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/shotdecLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/experience"
+                    android:layout_margin="16dp"
+                    app:boxBackgroundColor="@color/darkorange"
+                    app:hintTextColor="@color/black"
+                    app:placeholderText="@string/shortdesc">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/shot_dec"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="@string/enter_short_description"
+                        android:textColor="@color/black" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/deatilLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/shotdecLayout"
+                    android:layout_margin="16dp"
+                    app:boxBackgroundColor="@color/darkorange"
+                    app:hintTextColor="@color/black"
+                    app:placeholderText="@string/details">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/deatails"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="@string/enter_detils"
+                        android:textColor="@color/black" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <Button
+                    android:id="@+id/submit_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/deatilLayout"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:backgroundTint="@color/lightgreen"
+                    android:text="@string/post" />
+            </RelativeLayout>
+        </ScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

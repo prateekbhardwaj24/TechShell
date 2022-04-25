@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="binding"
+            type="com.example.techshellindiaproject.LoginActivity" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".LoginActivity">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/darback"
+            android:gravity="center">
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/numberLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                app:boxBackgroundColor="@color/darkorange"
+                app:hintTextColor="@color/black"
+                app:placeholderText="https://youtube.com/abgtrv">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/mobile_num"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/numberhint"
+                    android:inputType="number"
+                    android:textColor="@color/black" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <Button
+                android:id="@+id/login_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/numberLayout"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="28dp"
+                android:backgroundTint="@color/lightgreen"
+                android:text="@string/login" />
+
+        </RelativeLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

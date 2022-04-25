@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">TechShellIndiaProject</string>
+    <string name="numberhint">ex - 9999999999</string>
+    <string name="full_name">Full name</string>
+    <string name="mobilenumber">Mobile number</string>
+    <string name="customer_id">customer id</string>
+    <string name="customer_name">customer name</string>
+    <string name="job_title">job_title</string>
+    <string name="noida_mumbai_etc">Noida, mumbai etc</string>
+    <string name="budgetfrom">800000</string>
+    <string name="budgetto">1000000</string>
+    <string name="jobtype">Fulltime, part-time etc</string>
+    <string name="age">22</string>
+    <string name="exper">2 years</string>
+    <string name="shortdesc">This job is amaz...</string>
+    <string name="details">Deatiles of the job ..</string>
+    <string name="post">Post</string>
+    <string name="enter_budget_from">Enter Budget From</string>
+    <string name="enter_budget_to">Enter Budget To</string>
+    <string name="enter_people_age">Enter People Age</string>
+    <string name="enter_short_description">Enter Short Description</string>
+    <string name="enter_detils">Enter Detils</string>
+    <string name="don_t_have_an_account">Don\'t have an account</string>
+    <string name="register">Register</string>
+    <string name="welcome_to_our_job_portal">Welcome to our job portal!</string>
+    <string name="already_have_an_account">Already have an account</string>
+    <string name="login">login</string>
+    <string-array name="your_string_array">
+        <item>Hint...</item>
+        <item>Item1</item>
+        <item>Item2</item>
+        <item>Item3</item>
+    </string-array>
+</resources>

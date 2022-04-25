@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="binding"
+            type="com.example.techshellindiaproject.RegistrationActivity" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/darback"
+        tools:context=".RegistrationActivity">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="match_parent">
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/fullnameLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                app:boxBackgroundColor="@color/darkorange"
+                app:hintTextColor="@color/black"
+                app:placeholderText="Full name">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/full_name_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/full_name"
+                    android:textColor="@color/black" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/mobileLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                app:boxBackgroundColor="@color/darkorange"
+                app:hintTextColor="@color/black"
+                android:layout_below="@+id/fullnameLayout"
+                app:placeholderText="Enter Mobile number">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/mobile_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/mobilenumber"
+                    android:inputType="number"
+                    android:textColor="@color/black" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/addressLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                app:boxBackgroundColor="@color/darkorange"
+                app:hintTextColor="@color/black"
+                android:layout_below="@+id/mobileLayout"
+                app:placeholderText="Enter Address">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/address_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Noida, Mumbai etc"
+                    android:textColor="@color/black" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <Button
+                android:id="@+id/submit_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/addressLayout"
+                android:layout_centerHorizontal="true"
+                android:backgroundTint="@color/lightgreen"
+                android:text="submit" />
+        </RelativeLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
